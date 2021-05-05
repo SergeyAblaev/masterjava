@@ -36,6 +36,12 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="Progect">
+        <xs:complexType>
+            <xs:attribute type="xs:IDREF" name="group" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
     <xs:simpleType name="flagType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="active"/>
